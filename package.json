@@ -1,7 +1,7 @@
 {
   "name": "com.supremestranger.leoecs-lite-physics",
   "author": "supremestranger",
-  "displayName": "LeoECS Physics",
+  "displayName": "LeoECS Lite Physics",
   "description": "Simple Unity physics events emitter for LeoECS Lite framework.",
   "unity": "2019.1",
   "version": "1.0.0",
