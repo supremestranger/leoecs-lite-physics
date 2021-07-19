@@ -13,7 +13,13 @@ namespace LeoEcsPhysics
             ecsSystems.DelHere<OnCollisionStayEvent>();
             ecsSystems.DelHere<OnCollisionExitEvent>();
             ecsSystems.DelHere<OnControllerColliderHitEvent>();
-
+            ecsSystems.DelHere<OnTriggerEnter2DEvent>();
+            ecsSystems.DelHere<OnTriggerStay2DEvent>();
+            ecsSystems.DelHere<OnTriggerExit2DEvent>();
+            ecsSystems.DelHere<OnCollisionEnter2DEvent>();
+            ecsSystems.DelHere<OnCollisionStay2DEvent>();
+            ecsSystems.DelHere<OnCollisionExit2DEvent>();
+            
             return ecsSystems;
         }
     }
