@@ -63,7 +63,7 @@ namespace LeoEcsPhysics
             eventComponent.relativeVelocity = relativeVelocity;
         }
 
-        public static void RegisterCollisionExitEvent(GameObject senderGameObject, Collider collider, ContactPoint firstContactPoint, Vector3 relativeVelocity)
+        public static void RegisterCollisionExitEvent(GameObject senderGameObject, Collider collider, Vector3 relativeVelocity)
         {
             var eventEntity = ecsWorld.NewEntity();
             var pool = ecsWorld.GetPool<OnCollisionExitEvent>();
@@ -71,7 +71,6 @@ namespace LeoEcsPhysics
             ref var eventComponent = ref pool.Get(eventEntity);
             eventComponent.senderGameObject = senderGameObject;
             eventComponent.collider = collider;
-            eventComponent.firstContactPoint = firstContactPoint;
             eventComponent.relativeVelocity = relativeVelocity;
         }
 
@@ -111,7 +110,7 @@ namespace LeoEcsPhysics
             eventComponent.relativeVelocity = relativeVelocity;
         }
 
-        public static void RegisterCollisionExit2DEvent(GameObject senderGameObject, Collider2D collider2D, ContactPoint2D firstContactPoint2D, Vector2 relativeVelocity)
+        public static void RegisterCollisionExit2DEvent(GameObject senderGameObject, Collider2D collider2D, Vector2 relativeVelocity)
         {
             var eventEntity = ecsWorld.NewEntity();
             var pool = ecsWorld.GetPool<OnCollisionExit2DEvent>();
@@ -119,7 +118,6 @@ namespace LeoEcsPhysics
             ref var eventComponent = ref pool.Get(eventEntity);
             eventComponent.senderGameObject = senderGameObject;
             eventComponent.collider2D = collider2D;
-            eventComponent.firstContactPoint2D = firstContactPoint2D;
             eventComponent.relativeVelocity = relativeVelocity;
         }
 
