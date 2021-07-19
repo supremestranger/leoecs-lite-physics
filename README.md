@@ -27,6 +27,7 @@ You need to attach a concrete `Checker` to any `GameObject` that emits any Unity
 * `OnCollisionStayChecker` - responsible for `OnCollisionStay` event
 * `OnCollisionExitChecker` - responsible for `OnCollisionExit` event
 * `OnControllerColliderHitChecker` - responsible for `OnControllerColliderHit` (only for `Character Controller` objects) event
+> All 2D checkers work in the same way.
 
 ## Events
 When Unity Physics event is raised, the `EcsPhysicsEvents` static class creates a new entity-event with a specific component like `OnCollisionEnterEvent` or `OnTriggerStayEvent`.
@@ -54,6 +55,7 @@ public Vector3 hitNormal;
 public Vector3 moveDirection;
 ```
 
+> All 2D events work in the same way.
 
 But before diving into handling all of this stuff, you need to initialize the `EcsPhysicsEvents` in your `Startup` script like this:
 
