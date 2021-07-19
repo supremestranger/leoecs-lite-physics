@@ -41,7 +41,7 @@ public Collider collider;
 public ContactPoint firstContactPoint;
 public Vector3 relativeVelocity;
 ```
-> **Note**: The contact point is in world-space!
+> **Note**: The contact point is in world-space and not available in `Exit` events!!
 ### OnTrigger
 ```csharp
 public GameObject senderGameObject;
