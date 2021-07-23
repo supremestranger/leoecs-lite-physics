@@ -2,7 +2,8 @@
     "name": "com.supremestranger.leoecs-lite-physics",
     "rootNamespace": "",
     "references": [
-        "Leopotam.EcsLite"
+        "Leopotam.EcsLite",
+        "Leopotam.EcsLite.ExtendedSystems"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
