@@ -1,4 +1,5 @@
 ﻿using Leopotam.EcsLite;
+using Leopotam.EcsLite.ExtendedSystems;
 
 namespace LeoEcsPhysics
 {
