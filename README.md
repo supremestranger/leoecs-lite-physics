@@ -9,7 +9,7 @@ You can install this repository via Package Manager:
 
 Fill the opened field with this line:
 ```
-https://github.com/supremestranger/leoecs-physics.git
+https://github.com/supremestranger/leoecs-lite-physics.git
 ```
 
 If you can't / don't want to use Package Manager or Git, you can just download the repository and add it to your project.
