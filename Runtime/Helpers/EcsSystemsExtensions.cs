@@ -5,7 +5,7 @@ namespace LeoEcsPhysics
 {
     public static class EcsSystemsExtensions
     {
-        public static EcsSystems DelHerePhysics(this EcsSystems ecsSystems, string worldName = null)
+        public static IEcsSystems DelHerePhysics(this IEcsSystems ecsSystems, string worldName = null)
         {
             ecsSystems.DelHere<OnTriggerEnterEvent>(worldName);
             ecsSystems.DelHere<OnTriggerStayEvent>(worldName);
